@@ -7,7 +7,7 @@ Executable = align.py
 #Input      = world.txt  
 #Can contain standard input
 
-transfer_input_files = ../bwa, ../in_reads/$(myfile).fa
+transfer_input_files = ../bwa, ../in_reads/patient1/$(myfile).fa
 
 ## Arguments that will be passed to the executable ##
 
