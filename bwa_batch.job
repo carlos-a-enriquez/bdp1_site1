@@ -1,0 +1,41 @@
+########### The program that will be executed #######
+
+Executable = align.py
+
+############ Input Sandbox  #########################
+
+#Input      = world.txt  
+#Can contain standard input
+
+transfer_input_files = ../bwa, ../in_reads/$(myfile).fa
+
+## Arguments that will be passed to the executable ##
+
+Arguments  = $(myfile)
+
+###### Output Sandbox ###############################
+initialdir = out_reads
+
+Log        = metadata/condor-$(Cluster).log    
+# will contain condor log
+
+Output     = metadata/condor-$(Cluster)-$(Process).out    
+# will contain the standard output
+
+Error      = metadata/condor-$(Cluster)-$(Process).error  
+# will contain the standard error
+
+transfer_output_files = output/
+
+############## condor control variables #############
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+Universe   = vanilla
+
+#requirements = (Machine == "phd-wn-1")
+
+#####################################################
+
+Queue myfile from [0:5] file_list.txt
