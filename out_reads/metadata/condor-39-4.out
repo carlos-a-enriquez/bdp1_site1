@@ -1,0 +1,3 @@
+launching command:  ./bwa aln -t 1 /data/BDP1_2022/hg19/hg19bwaidx read_104.fa > output/read_104.sai
+Creating md5sums
+exiting

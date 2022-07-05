@@ -1,0 +1,14 @@
+[bwa_aln] 17bp reads: max_diff = 2
+[bwa_aln] 38bp reads: max_diff = 3
+[bwa_aln] 64bp reads: max_diff = 4
+[bwa_aln] 93bp reads: max_diff = 5
+[bwa_aln] 124bp reads: max_diff = 6
+[bwa_aln] 157bp reads: max_diff = 7
+[bwa_aln] 190bp reads: max_diff = 8
+[bwa_aln] 225bp reads: max_diff = 9
+[bwa_aln_core] calculate SA coordinate... 0.25 sec
+[bwa_aln_core] write to the disk... 0.00 sec
+[bwa_aln_core] 1000 sequences have been processed.
+[main] Version: 0.7.15-r1140
+[main] CMD: ./bwa aln -t 1 /data/BDP1_2022/hg19/hg19bwaidx read_102.fa
+[main] Real time: 21.483 sec; CPU: 3.194 sec
