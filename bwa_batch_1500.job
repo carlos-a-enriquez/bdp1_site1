@@ -32,8 +32,8 @@ transfer_output_files = output/
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
 #In theory would assign an entire slot to the job.
-request_cpus     = Cpus
-rank = Cpus
+request_cpus     = 2
+#rank = Cpus
 #request_memory = 6144
 
 Universe   = vanilla
@@ -42,4 +42,4 @@ Universe   = vanilla
 
 #####################################################
 
-Queue 8
+Queue 1
