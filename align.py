@@ -21,7 +21,7 @@ md5file = "md5.txt"
 command="mkdir output"
 os.system(command)
 
-command = "./bwa aln -t 1 " + dbpath + dbname + " " + queryname + " > " + "output/"+ out_name + ".sai"
+command = "./bwa aln -t 2 " + dbpath + dbname + " " + queryname + " > " + "output/"+ out_name + ".sai"
 print "launching command: " , command
 os.system(command)
 
